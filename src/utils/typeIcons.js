@@ -1,0 +1,20 @@
+export const typeIconClasses = {
+  fire: "fas fa-fire",
+  water: "fas fa-tint",
+  grass: "fas fa-leaf",
+  electric: "fas fa-bolt",
+  ice: "fas fa-snowflake",
+  bug: "fas fa-bug",
+  poison: "fas fa-skull-crossbones",
+  flying: "fas fa-feather-alt",
+  ground: "fas fa-mountain",
+  dragon: "fas fa-dragon",
+  psychic: "fas fa-eye",
+  fighting: "fas fa-fist-raised",
+  normal: "fas fa-circle",
+  fairy: "fas fa-magic",
+  steel: "fas fa-cog",
+  ghost: "fas fa-ghost",
+  dark: "fas fa-moon",
+  rock: "fas fa-gem"
+};
