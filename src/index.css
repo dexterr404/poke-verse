@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Pokemon';
+  src: url('./assets/Fonts/Pokemon/Pokemon Solid.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Flexo';
+  src: url('./assets/Fonts/Flexo/Flexo-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.skewed-box {
+  transform: skew(-20deg);
+  border-left: solid black 3px;
+  border-right: solid black 3px;
+  text-align: center;
+}
+.skewed-box a {
+  transform: skew(20deg);
+}
+
+.outlined-text {
+  text-shadow:
+    -1px -1px 2px rgb(50, 16, 202),
+     1px -1px 2px rgb(50, 16, 202),
+    -1px  1px 2px rgb(50, 16, 202),
+     1px  1px 2px rgb(50, 16, 202);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url('./assets/pokemon-party.jpg');
+  background-size: cover;        /* ✅ Makes it fully cover */
+  background-repeat: no-repeat;  /* ✅ Prevents tiling */
+  background-attachment: fixed;  /* ✅ Stays fixed while scrolling */
+  background-position: center;   /* ✅ Centers the image */
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0; /* same as top:0; right:0; bottom:0; left:0 */
+  background: rgba(0, 0, 0, 0.4); /* ✅ dark overlay */
+  z-index: -1; /* stays behind content */
+}
